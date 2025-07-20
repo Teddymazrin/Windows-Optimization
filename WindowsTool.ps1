@@ -33,22 +33,29 @@ function Option3 {
 
 function Option4 {
 	Clear-host
-	$downloadUrl = "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
-$downloadPath = "$env:TEMP\adwcleaner.exe"
+$download1 = "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
+$download2 = "https://github.com/Teddymazrin/Windows-Optimization/raw/refs/heads/main/Programs/MBSetup.exe"
+$downloadPath1 = "$env:TEMP\adwcleaner.exe"
+$downloadPath2 = "$env:TEMP\MBSetup.exe"
 $destinationFolder = "C:\Users\$env:USERNAME\Desktop\PC\AntiVirus"
-$destinationPath = "$destinationFolder\adwcleaner.exe"
+$destinationPath1 = "$destinationFolder\adwcleaner.exe"
+$destinationPath2 = "$destinationFolder\Malwarebytes.exe"
 
 # Download the file
-Invoke-WebRequest -Uri $downloadUrl -OutFile $downloadPath
+Invoke-WebRequest -Uri $download1 -OutFile $downloadPath1
+Invoke-WebRequest -Uri $download2 -OutFile $downloadPath2
 
 # Create the AntiVirus folder on the Desktop
 New-Item -Path $destinationFolder -ItemType Directory -Force
 
 # Move the file to the Desktop folder
-Move-Item -Path $downloadPath -Destination $destinationPath -Force
+Move-Item -Path $downloadPath1 -Destination $destinationPath1 -Force
 
 # Optionally run it
-Start-Process -FilePath $destinationPath -ArgumentList "/eula /clean" -Wait
+Start-Process -FilePath $destinationPath1 -ArgumentList "/eula /clean" -Wait
+
+# Silently install Malwarebytes
+Start-Process -FilePath $destinationPath2 -ArgumentList "/SP- /VERYSILENT /NORESTART" -Wait
 
 }
 
