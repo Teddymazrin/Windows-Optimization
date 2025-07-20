@@ -91,8 +91,8 @@ Clear-Host
 # --- Restorepoint Section ---
 Clear-Host
 Write-Host "==============================================================================="
-Write-Host "  Press 1 -  Create a Restore Point"
-Write-Host "  Press 2 -  Continue Without Restore Point"
+Write-Host "1. Create a Restore Point"
+Write-Host "2. Continue Without Restore Point"
 Write-Host "==============================================================================="
 
 $choice = Read-Host "Enter Your Option"
@@ -133,8 +133,9 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sched
 # UI tweaks
 Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "MenuShowDelay" -Value "0"
 New-Item -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" -Force
-New-ItemProperty -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" `
-    -Name "(default)" -PropertyType String -Value "" -Force
+
+# Revert to Win10 Context menu
+New-ItemProperty -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" -Name "(default)" -PropertyType String -Value "" -Force
 
 # Windows 11 features
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" -Name "GlobalUserDisabled" -Value 1
