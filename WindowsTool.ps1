@@ -93,6 +93,29 @@ Clear-Host
 function Option6 {
 Clear-Host
 # Nvidia
+    Write-Host "Nvidia Utilities" -ForegroundColor Yellow
+    Write-Host "1. Update Nvidia Drivers"
+    Write-Host "2. Uninstall Graphics Driver"
+    Write-Host "3. Return to Main Menu"
+    $subChoice = Read-Host "Enter your Nvidia option"
+
+    switch ($subChoice) {
+        "1" {
+            Write-Host "Launching Nvidia driver update..." -ForegroundColor Cyan
+            Start-Process "https://www.nvidia.com/en-us/drivers/"
+        }
+        "2" {
+            Write-Host "Uninstalling Driver" -ForegroundColor Cyan
+            Invoke-WebRequest -Uri "https://github.com/Teddymazrin/Windows-Optimization/raw/refs/heads/main/Programs/CleanupTool.exe"
+        }
+	
+        "3" {
+            return
+        }
+        default {
+            Write-Host "Invalid Nvidia option. Returning to Main Menu." -ForegroundColor Red
+        }
+    }
 
 }
 
