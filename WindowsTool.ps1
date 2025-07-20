@@ -63,7 +63,7 @@ Start-Process -FilePath $destinationPath2 -ArgumentList "/SP- /VERYSILENT /NORES
 while ($true) {
 Clear-Host
 
-Write-Host "Windows Tool" -ForegroundColor Cyan
+Write-Host "Windows Tool Example" -ForegroundColor Cyan
 
     Write-Host "==========================================="
     Write-Host "PC Maintenance" -ForegroundColor Yellow
