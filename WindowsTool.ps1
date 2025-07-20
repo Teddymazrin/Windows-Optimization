@@ -109,10 +109,19 @@ Clear-Host
         }
         "2" {
             Write-Host "Running Driver Uninstaller" -ForegroundColor Cyan
-            # Downloading Cleanup Tool
-            Invoke-WebRequest -Uri "https://github.com/Teddymazrin/Windows-Optimization/raw/refs/heads/main/Programs/CleanupTool.exe" -OutFile "$env:TEMP/CleanupTool.exe"
-	    # Starting Cleanup Tool
-            Start-Process -FilePath "$env:TEMP/CleanupTool.exe"
+
+            $cleanupPath = "C:/CleanupTool.exe"
+
+            if (Test-Path $cleanupPath) {
+            Write-Host "Cleanup Tool already exists. Starting it..." -ForegroundColor Green
+    	    Start-Process -FilePath $cleanupPath
+      } else {
+    	    Write-Host "Cleanup Tool not found. Downloading..." -ForegroundColor Yellow
+            Invoke-WebRequest -Uri "https://github.com/Teddymazrin/Windows-Optimization/raw/refs/heads/main/Programs/CleanupTool.exe" -OutFile $cleanupPath
+            Write-Host "Download complete. Starting Cleanup Tool..." -ForegroundColor Green
+            Start-Process -FilePath $cleanupPath
+}
+
         }
 	
         "3" {
