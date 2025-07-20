@@ -229,7 +229,7 @@ Write-Host "Windows Tool" -ForegroundColor Cyan
     Write-Host "3. Reset Network"
     Write-Host "4. Download AntiVirus Programs"
     Write-Host "PC Optimization" -ForegroundColor Yellow
-    Write-Host "5. Registry Changes"
+    Write-Host "5. Apply Optimizations"
     Write-Host "6. Nvidia"
     Write-Host "7. Default Services / Bare Gaming Services"
     Write-Host "==========================================="
