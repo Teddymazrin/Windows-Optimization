@@ -225,560 +225,566 @@ Clear-Host
         "1" {
 # Set Services to Manual
 
-Set-Service -Name "AJRouter" -StartupType Disabled
-Set-Service -Name "ALG" -StartupType Manual
-Set-Service -Name "AppIDSvc" -StartupType Manual
-Set-Service -Name "AppMgmt" -StartupType Manual
-Set-Service -Name "AppReadiness" -StartupType Manual
-Set-Service -Name "AppVClient" -StartupType Disabled
-Set-Service -Name "AppXSvc" -StartupType Manual
-Set-Service -Name "Appinfo" -StartupType Manual
-Set-Service -Name "AssignedAccessManagerSvc" -StartupType Disabled
-Set-Service -Name "AudioEndpointBuilder" -StartupType Automatic
-Set-Service -Name "AudioSrv" -StartupType Automatic
-Set-Service -Name "Audiosrv" -StartupType Automatic
-Set-Service -Name "AxInstSV" -StartupType Manual
-Set-Service -Name "BDESVC" -StartupType Manual
-Set-Service -Name "BFE" -StartupType Automatic
-Set-Service -Name "BITS" -StartupType AutomaticDelayedStart
-Set-Service -Name "BTAGService" -StartupType Manual
-Set-Service -Name "BcastDVRUserService_*" -StartupType Manual
-Set-Service -Name "BluetoothUserService_*" -StartupType Manual
-Set-Service -Name "BrokerInfrastructure" -StartupType Automatic
-Set-Service -Name "Browser" -StartupType Manual
-Set-Service -Name "BthAvctpSvc" -StartupType Automatic
-Set-Service -Name "BthHFSrv" -StartupType Automatic
-Set-Service -Name "CDPSvc" -StartupType Manual
-Set-Service -Name "CDPUserSvc_*" -StartupType Automatic
-Set-Service -Name "COMSysApp" -StartupType Manual
-Set-Service -Name "CaptureService_*" -StartupType Manual
-Set-Service -Name "CertPropSvc" -StartupType Manual
-Set-Service -Name "ClipSVC" -StartupType Manual
-Set-Service -Name "ConsentUxUserSvc_*" -StartupType Manual
-Set-Service -Name "CoreMessagingRegistrar" -StartupType Automatic
-Set-Service -Name "CredentialEnrollmentManagerUserSvc_*" -StartupType Manual
-Set-Service -Name "CryptSvc" -StartupType Automatic
-Set-Service -Name "CscService" -StartupType Manual
-Set-Service -Name "DPS" -StartupType Automatic
-Set-Service -Name "DcomLaunch" -StartupType Automatic
-Set-Service -Name "DcpSvc" -StartupType Manual
-Set-Service -Name "DevQueryBroker" -StartupType Manual
-Set-Service -Name "DeviceAssociationBrokerSvc_*" -StartupType Manual
-Set-Service -Name "DeviceAssociationService" -StartupType Manual
-Set-Service -Name "DeviceInstall" -StartupType Manual
-Set-Service -Name "DevicePickerUserSvc_*" -StartupType Manual
-Set-Service -Name "DevicesFlowUserSvc_*" -StartupType Manual
-Set-Service -Name "Dhcp" -StartupType Automatic
-Set-Service -Name "DiagTrack" -StartupType Disabled
-Set-Service -Name "DialogBlockingService" -StartupType Disabled
-Set-Service -Name "DispBrokerDesktopSvc" -StartupType Automatic
-Set-Service -Name "DisplayEnhancementService" -StartupType Manual
-Set-Service -Name "DmEnrollmentSvc" -StartupType Manual
-Set-Service -Name "Dnscache" -StartupType Automatic
-Set-Service -Name "EFS" -StartupType Manual
-Set-Service -Name "EapHost" -StartupType Manual
-Set-Service -Name "EntAppSvc" -StartupType Manual
-Set-Service -Name "EventLog" -StartupType Automatic
-Set-Service -Name "EventSystem" -StartupType Automatic
-Set-Service -Name "FDResPub" -StartupType Manual
-Set-Service -Name "Fax" -StartupType Manual
-Set-Service -Name "FontCache" -StartupType Automatic
-Set-Service -Name "FrameServer" -StartupType Manual
-Set-Service -Name "FrameServerMonitor" -StartupType Manual
-Set-Service -Name "GraphicsPerfSvc" -StartupType Manual
-Set-Service -Name "HomeGroupListener" -StartupType Manual
-Set-Service -Name "HomeGroupProvider" -StartupType Manual
-Set-Service -Name "HvHost" -StartupType Manual
-Set-Service -Name "IEEtwCollectorService" -StartupType Manual
-Set-Service -Name "IKEEXT" -StartupType Manual
-Set-Service -Name "InstallService" -StartupType Manual
-Set-Service -Name "InventorySvc" -StartupType Manual
-Set-Service -Name "IpxlatCfgSvc" -StartupType Manual
-Set-Service -Name "KeyIso" -StartupType Automatic
-Set-Service -Name "KtmRm" -StartupType Manual
-Set-Service -Name "LSM" -StartupType Automatic
-Set-Service -Name "LanmanServer" -StartupType Automatic
-Set-Service -Name "LanmanWorkstation" -StartupType Automatic
-Set-Service -Name "LicenseManager" -StartupType Manual
-Set-Service -Name "LxpSvc" -StartupType Manual
-Set-Service -Name "MSDTC" -StartupType Manual
-Set-Service -Name "MSiSCSI" -StartupType Manual
-Set-Service -Name "MapsBroker" -StartupType AutomaticDelayedStart
-Set-Service -Name "McpManagementService" -StartupType Manual
-Set-Service -Name "MessagingService_*" -StartupType Manual
-Set-Service -Name "MicrosoftEdgeElevationService" -StartupType Manual
-Set-Service -Name "MixedRealityOpenXRSvc" -StartupType Manual
-Set-Service -Name "MpsSvc" -StartupType Automatic
-Set-Service -Name "MsKeyboardFilter" -StartupType Manual
-Set-Service -Name "NPSMSvc_*" -StartupType Manual
-Set-Service -Name "NaturalAuthentication" -StartupType Manual
-Set-Service -Name "NcaSvc" -StartupType Manual
-Set-Service -Name "NcbService" -StartupType Manual
-Set-Service -Name "NcdAutoSetup" -StartupType Manual
-Set-Service -Name "NetSetupSvc" -StartupType Manual
-Set-Service -Name "NetTcpPortSharing" -StartupType Disabled
-Set-Service -Name "Netlogon" -StartupType Automatic
-Set-Service -Name "Netman" -StartupType Manual
-Set-Service -Name "NgcCtnrSvc" -StartupType Manual
-Set-Service -Name "NgcSvc" -StartupType Manual
-Set-Service -Name "NlaSvc" -StartupType Manual
-Set-Service -Name "OneSyncSvc_*" -StartupType Automatic
-Set-Service -Name "P9RdrService_*" -StartupType Manual
-Set-Service -Name "PNRPAutoReg" -StartupType Manual
-Set-Service -Name "PNRPsvc" -StartupType Manual
-Set-Service -Name "PcaSvc" -StartupType Manual
-Set-Service -Name "PeerDistSvc" -StartupType Manual
-Set-Service -Name "PenService_*" -StartupType Manual
-Set-Service -Name "PerfHost" -StartupType Manual
-Set-Service -Name "PhoneSvc" -StartupType Manual
-Set-Service -Name "PimIndexMaintenanceSvc_*" -StartupType Manual
-Set-Service -Name "PlugPlay" -StartupType Manual
-Set-Service -Name "PolicyAgent" -StartupType Manual
-Set-Service -Name "Power" -StartupType Automatic
-Set-Service -Name "PrintNotify" -StartupType Manual
-Set-Service -Name "PrintWorkflowUserSvc_*" -StartupType Manual
-Set-Service -Name "ProfSvc" -StartupType Automatic
-Set-Service -Name "PushToInstall" -StartupType Manual
-Set-Service -Name "QWAVE" -StartupType Manual
-Set-Service -Name "RasAuto" -StartupType Manual
-Set-Service -Name "RasMan" -StartupType Manual
-Set-Service -Name "RemoteAccess" -StartupType Disabled
-Set-Service -Name "RemoteRegistry" -StartupType Disabled
-Set-Service -Name "RetailDemo" -StartupType Manual
-Set-Service -Name "RmSvc" -StartupType Manual
-Set-Service -Name "RpcEptMapper" -StartupType Automatic
-Set-Service -Name "RpcLocator" -StartupType Manual
-Set-Service -Name "RpcSs" -StartupType Automatic
-Set-Service -Name "SCPolicySvc" -StartupType Manual
-Set-Service -Name "SCardSvr" -StartupType Manual
-Set-Service -Name "SDRSVC" -StartupType Manual
-Set-Service -Name "SEMgrSvc" -StartupType Manual
-Set-Service -Name "SENS" -StartupType Automatic
-Set-Service -Name "SNMPTRAP" -StartupType Manual
-Set-Service -Name "SNMPTrap" -StartupType Manual
-Set-Service -Name "SSDPSRV" -StartupType Manual
-Set-Service -Name "SamSs" -StartupType Automatic
-Set-Service -Name "ScDeviceEnum" -StartupType Manual
-Set-Service -Name "Schedule" -StartupType Automatic
-Set-Service -Name "SecurityHealthService" -StartupType Manual
-Set-Service -Name "Sense" -StartupType Manual
-Set-Service -Name "SensorDataService" -StartupType Manual
-Set-Service -Name "SensorService" -StartupType Manual
-Set-Service -Name "SensrSvc" -StartupType Manual
-Set-Service -Name "SessionEnv" -StartupType Manual
-Set-Service -Name "SharedAccess" -StartupType Manual
-Set-Service -Name "SharedRealitySvc" -StartupType Manual
-Set-Service -Name "ShellHWDetection" -StartupType Automatic
-Set-Service -Name "SmsRouter" -StartupType Manual
-Set-Service -Name "Spooler" -StartupType Automatic
-Set-Service -Name "SstpSvc" -StartupType Manual
-Set-Service -Name "StiSvc" -StartupType Manual
-Set-Service -Name "StorSvc" -StartupType Manual
-Set-Service -Name "SysMain" -StartupType Automatic
-Set-Service -Name "SystemEventsBroker" -StartupType Automatic
-Set-Service -Name "TabletInputService" -StartupType Manual
-Set-Service -Name "TapiSrv" -StartupType Manual
-Set-Service -Name "TermService" -StartupType Automatic
-Set-Service -Name "Themes" -StartupType Automatic
-Set-Service -Name "TieringEngineService" -StartupType Manual
-Set-Service -Name "TimeBroker" -StartupType Manual
-Set-Service -Name "TimeBrokerSvc" -StartupType Manual
-Set-Service -Name "TokenBroker" -StartupType Manual
-Set-Service -Name "TrkWks" -StartupType Automatic
-Set-Service -Name "TroubleshootingSvc" -StartupType Manual
-Set-Service -Name "TrustedInstaller" -StartupType Manual
-Set-Service -Name "UI0Detect" -StartupType Manual
-Set-Service -Name "UdkUserSvc_*" -StartupType Manual
-Set-Service -Name "UevAgentService" -StartupType Disabled
-Set-Service -Name "UmRdpService" -StartupType Manual
-Set-Service -Name "UnistoreSvc_*" -StartupType Manual
-Set-Service -Name "UserDataSvc_*" -StartupType Manual
-Set-Service -Name "UserManager" -StartupType Automatic
-Set-Service -Name "UsoSvc" -StartupType Manual
-Set-Service -Name "VGAuthService" -StartupType Automatic
-Set-Service -Name "VMTools" -StartupType Automatic
-Set-Service -Name "VSS" -StartupType Manual
-Set-Service -Name "VacSvc" -StartupType Manual
-Set-Service -Name "VaultSvc" -StartupType Automatic
-Set-Service -Name "W32Time" -StartupType Manual
-Set-Service -Name "WEPHOSTSVC" -StartupType Manual
-Set-Service -Name "WFDSConMgrSvc" -StartupType Manual
-Set-Service -Name "WMPNetworkSvc" -StartupType Manual
-Set-Service -Name "WManSvc" -StartupType Manual
-Set-Service -Name "WPDBusEnum" -StartupType Manual
-Set-Service -Name "WSService" -StartupType Manual
-Set-Service -Name "WSearch" -StartupType AutomaticDelayedStart
-Set-Service -Name "WaaSMedicSvc" -StartupType Manual
-Set-Service -Name "WalletService" -StartupType Manual
-Set-Service -Name "WarpJITSvc" -StartupType Manual
-Set-Service -Name "WbioSrvc" -StartupType Manual
-Set-Service -Name "Wcmsvc" -StartupType Automatic
-Set-Service -Name "WcsPlugInService" -StartupType Manual
-Set-Service -Name "WdNisSvc" -StartupType Manual
-Set-Service -Name "WdiServiceHost" -StartupType Manual
-Set-Service -Name "WdiSystemHost" -StartupType Manual
-Set-Service -Name "WebClient" -StartupType Manual
-Set-Service -Name "Wecsvc" -StartupType Manual
-Set-Service -Name "WerSvc" -StartupType Manual
-Set-Service -Name "WiaRpc" -StartupType Manual
-Set-Service -Name "WinDefend" -StartupType Automatic
-Set-Service -Name "WinHttpAutoProxySvc" -StartupType Manual
-Set-Service -Name "WinRM" -StartupType Manual
-Set-Service -Name "Winmgmt" -StartupType Automatic
-Set-Service -Name "WlanSvc" -StartupType Automatic
-Set-Service -Name "WpcMonSvc" -StartupType Manual
-Set-Service -Name "WpnService" -StartupType Manual
-Set-Service -Name "WpnUserService_*" -StartupType Automatic
-Set-Service -Name "XblAuthManager" -StartupType Manual
-Set-Service -Name "XblGameSave" -StartupType Manual
-Set-Service -Name "XboxGipSvc" -StartupType Manual
-Set-Service -Name "XboxNetApiSvc" -StartupType Manual
-Set-Service -Name "autotimesvc" -StartupType Manual
-Set-Service -Name "bthserv" -StartupType Manual
-Set-Service -Name "camsvc" -StartupType Manual
-Set-Service -Name "cbdhsvc_*" -StartupType Manual
-Set-Service -Name "cloudidsvc" -StartupType Manual
-Set-Service -Name "dcsvc" -StartupType Manual
-Set-Service -Name "defragsvc" -StartupType Manual
-Set-Service -Name "diagnosticshub.standardcollector.service" -StartupType Manual
-Set-Service -Name "diagsvc" -StartupType Manual
-Set-Service -Name "dmwappushservice" -StartupType Manual
-Set-Service -Name "dot3svc" -StartupType Manual
-Set-Service -Name "edgeupdate" -StartupType Manual
-Set-Service -Name "edgeupdatem" -StartupType Manual
-Set-Service -Name "embeddedmode" -StartupType Manual
-Set-Service -Name "fdPHost" -StartupType Manual
-Set-Service -Name "fhsvc" -StartupType Manual
-Set-Service -Name "gpsvc" -StartupType Automatic
-Set-Service -Name "hidserv" -StartupType Manual
-Set-Service -Name "icssvc" -StartupType Manual
-Set-Service -Name "iphlpsvc" -StartupType Automatic
-Set-Service -Name "lfsvc" -StartupType Manual
-Set-Service -Name "lltdsvc" -StartupType Manual
-Set-Service -Name "lmhosts" -StartupType Manual
-Set-Service -Name "mpssvc" -StartupType Automatic
-Set-Service -Name "msiserver" -StartupType Manual
-Set-Service -Name "netprofm" -StartupType Manual
-Set-Service -Name "nsi" -StartupType Automatic
-Set-Service -Name "p2pimsvc" -StartupType Manual
-Set-Service -Name "p2psvc" -StartupType Manual
-Set-Service -Name "perceptionsimulation" -StartupType Manual
-Set-Service -Name "pla" -StartupType Manual
-Set-Service -Name "seclogon" -StartupType Manual
-Set-Service -Name "shpamsvc" -StartupType Disabled
-Set-Service -Name "smphost" -StartupType Manual
-Set-Service -Name "spectrum" -StartupType Manual
-Set-Service -Name "sppsvc" -StartupType AutomaticDelayedStart
-Set-Service -Name "ssh-agent" -StartupType Disabled
-Set-Service -Name "svsvc" -StartupType Manual
-Set-Service -Name "swprv" -StartupType Manual
-Set-Service -Name "tiledatamodelsvc" -StartupType Automatic
-Set-Service -Name "tzautoupdate" -StartupType Disabled
-Set-Service -Name "uhssvc" -StartupType Disabled
-Set-Service -Name "upnphost" -StartupType Manual
-Set-Service -Name "vds" -StartupType Manual
-Set-Service -Name "vm3dservice" -StartupType Manual
-Set-Service -Name "vmicguestinterface" -StartupType Manual
-Set-Service -Name "vmicheartbeat" -StartupType Manual
-Set-Service -Name "vmickvpexchange" -StartupType Manual
-Set-Service -Name "vmicrdv" -StartupType Manual
-Set-Service -Name "vmicshutdown" -StartupType Manual
-Set-Service -Name "vmictimesync" -StartupType Manual
-Set-Service -Name "vmicvmsession" -StartupType Manual
-Set-Service -Name "vmicvss" -StartupType Manual
-Set-Service -Name "vmvss" -StartupType Manual
-Set-Service -Name "wbengine" -StartupType Manual
-Set-Service -Name "wcncsvc" -StartupType Manual
-Set-Service -Name "webthreatdefsvc" -StartupType Manual
-Set-Service -Name "webthreatdefusersvc_*" -StartupType Automatic
-Set-Service -Name "wercplsupport" -StartupType Manual
-Set-Service -Name "wisvc" -StartupType Manual
-Set-Service -Name "wlidsvc" -StartupType Manual
-Set-Service -Name "wlpasvc" -StartupType Manual
-Set-Service -Name "wmiApSrv" -StartupType Manual
-Set-Service -Name "workfolderssvc" -StartupType Manual
-Set-Service -Name "wscsvc" -StartupType AutomaticDelayedStart
-Set-Service -Name "wuauserv" -StartupType Manual
-Set-Service -Name "wudfsvc" -StartupType Manual
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AJRouter" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ALG" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppIDSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppMgmt" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppReadiness" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppVClient" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppXSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Appinfo" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AssignedAccessManagerSvc" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AudioEndpointBuilder" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AudioSrv" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Audiosrv" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AxInstSV" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BDESVC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BFE" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BITS" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BTAGService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BcastDVRUserService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BluetoothUserService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BrokerInfrastructure" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Browser" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BthAvctpSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BthHFSrv" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CDPSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CDPUserSvc_*" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\COMSysApp" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CaptureService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CertPropSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ClipSVC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ConsentUxUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CoreMessagingRegistrar" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CredentialEnrollmentManagerUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CryptSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CscService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DPS" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DcomLaunch" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DcpSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DevQueryBroker" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DeviceAssociationBrokerSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DeviceAssociationService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DeviceInstall" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DevicePickerUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DevicesFlowUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dhcp" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DiagTrack" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DialogBlockingService" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DispBrokerDesktopSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DisplayEnhancementService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DmEnrollmentSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EFS" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EapHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EntAppSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EventLog" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EventSystem" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\FDResPub" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Fax" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\FontCache" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\FrameServer" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\FrameServerMonitor" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\HomeGroupListener" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\HomeGroupProvider" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\HvHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\IEEtwCollectorService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\IKEEXT" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\InstallService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\InventorySvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\IpxlatCfgSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\KeyIso" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\KtmRm" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LSM" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanWorkstation" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LicenseManager" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LxpSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MSDTC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MSiSCSI" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MapsBroker" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\McpManagementService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MessagingService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MicrosoftEdgeElevationService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MixedRealityOpenXRSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MpsSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MsKeyboardFilter" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NPSMSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NaturalAuthentication" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NcaSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NcbService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NcdAutoSetup" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NetSetupSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NetTcpPortSharing" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netman" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NgcCtnrSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NgcSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NlaSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\OneSyncSvc_*" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\P9RdrService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PNRPAutoReg" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PNRPsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PcaSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PeerDistSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PenService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PerfHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PhoneSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PimIndexMaintenanceSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PlugPlay" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PolicyAgent" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Power" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PrintNotify" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PrintWorkflowUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ProfSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PushToInstall" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\QWAVE" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RasAuto" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RasMan" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RemoteAccess" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RemoteRegistry" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RetailDemo" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RmSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RpcEptMapper" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RpcLocator" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RpcSs" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SCPolicySvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SCardSvr" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SDRSVC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SEMgrSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SENS" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SNMPTRAP" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SNMPTrap" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SSDPSRV" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SamSs" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ScDeviceEnum" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Schedule" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SecurityHealthService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Sense" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SensorDataService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SensorService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SensrSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SessionEnv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SharedRealitySvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ShellHWDetection" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SmsRouter" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Spooler" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SstpSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\StiSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\StorSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SysMain" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SystemEventsBroker" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TabletInputService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TapiSrv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TermService" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Themes" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TieringEngineService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TimeBroker" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TimeBrokerSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TokenBroker" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TrkWks" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TroubleshootingSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TrustedInstaller" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UI0Detect" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UdkUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UevAgentService" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UmRdpService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UnistoreSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UserDataSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UserManager" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UsoSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VGAuthService" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VMTools" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VSS" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VacSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VaultSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\W32Time" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WEPHOSTSVC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WFDSConMgrSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WMPNetworkSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WManSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WPDBusEnum" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WSService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WSearch" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WalletService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WarpJITSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WbioSrvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Wcmsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WcsPlugInService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WdNisSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WdiServiceHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WdiSystemHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WebClient" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Wecsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WerSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WiaRpc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WinDefend" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WinRM" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Winmgmt" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WlanSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WpcMonSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WpnService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WpnUserService_*" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\XblAuthManager" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\XblGameSave" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\XboxGipSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\XboxNetApiSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\autotimesvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\bthserv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\camsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\cbdhsvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\cloudidsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\dcsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\defragsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\diagnosticshub.standardcollector.service" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\diagsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\dmwappushservice" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\dot3svc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\edgeupdate" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\edgeupdatem" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\embeddedmode" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\fdPHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\fhsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\gpsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\hidserv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\icssvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\iphlpsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\lfsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\lltdsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\lmhosts" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\mpssvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\msiserver" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\netprofm" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\nsi" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\p2pimsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\p2psvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\perceptionsimulation" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\pla" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\seclogon" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\shpamsvc" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\smphost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\spectrum" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\sppsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ssh-agent" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\svsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\swprv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\tiledatamodelsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\tzautoupdate" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\uhssvc" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\upnphost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vds" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vm3dservice" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicguestinterface" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicheartbeat" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmickvpexchange" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicrdv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicshutdown" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmictimesync" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicvmsession" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicvss" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmvss" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wbengine" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wcncsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\webthreatdefsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\webthreatdefusersvc_*" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wercplsupport" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wisvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wlidsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wlpasvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wmiApSrv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\workfolderssvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wscsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wuauserv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wudfsvc" -Name "Start" -Value 3
+
+Write-Host "Services Set to Manual. Restart Computer for this to go into effect" -Foregroundcolor Yellow
+pause
         }
         "2" {
 # Set Services to Default
 
-Set-Service -Name "AJRouter" -StartupType Manual
-Set-Service -Name "ALG" -StartupType Manual
-Set-Service -Name "AppIDSvc" -StartupType Manual
-Set-Service -Name "AppMgmt" -StartupType Manual
-Set-Service -Name "AppReadiness" -StartupType Manual
-Set-Service -Name "AppVClient" -StartupType Disabled
-Set-Service -Name "AppXSvc" -StartupType Manual
-Set-Service -Name "Appinfo" -StartupType Manual
-Set-Service -Name "AssignedAccessManagerSvc" -StartupType Manual
-Set-Service -Name "AudioEndpointBuilder" -StartupType Automatic
-Set-Service -Name "AudioSrv" -StartupType Automatic
-Set-Service -Name "Audiosrv" -StartupType Automatic
-Set-Service -Name "AxInstSV" -StartupType Manual
-Set-Service -Name "BDESVC" -StartupType Manual
-Set-Service -Name "BFE" -StartupType Automatic
-Set-Service -Name "BITS" -StartupType Automatic
-Set-Service -Name "BTAGService" -StartupType Manual
-Set-Service -Name "BcastDVRUserService_*" -StartupType Manual
-Set-Service -Name "BluetoothUserService_*" -StartupType Manual
-Set-Service -Name "BrokerInfrastructure" -StartupType Automatic
-Set-Service -Name "Browser" -StartupType Manual
-Set-Service -Name "BthAvctpSvc" -StartupType Automatic
-Set-Service -Name "BthHFSrv" -StartupType Automatic
-Set-Service -Name "CDPSvc" -StartupType Automatic
-Set-Service -Name "CDPUserSvc_*" -StartupType Automatic
-Set-Service -Name "COMSysApp" -StartupType Manual
-Set-Service -Name "CaptureService_*" -StartupType Manual
-Set-Service -Name "CertPropSvc" -StartupType Manual
-Set-Service -Name "ClipSVC" -StartupType Manual
-Set-Service -Name "ConsentUxUserSvc_*" -StartupType Manual
-Set-Service -Name "CoreMessagingRegistrar" -StartupType Automatic
-Set-Service -Name "CredentialEnrollmentManagerUserSvc_*" -StartupType Manual
-Set-Service -Name "CryptSvc" -StartupType Automatic
-Set-Service -Name "CscService" -StartupType Manual
-Set-Service -Name "DPS" -StartupType Automatic
-Set-Service -Name "DcomLaunch" -StartupType Automatic
-Set-Service -Name "DcpSvc" -StartupType Manual
-Set-Service -Name "DevQueryBroker" -StartupType Manual
-Set-Service -Name "DeviceAssociationBrokerSvc_*" -StartupType Manual
-Set-Service -Name "DeviceAssociationService" -StartupType Manual
-Set-Service -Name "DeviceInstall" -StartupType Manual
-Set-Service -Name "DevicePickerUserSvc_*" -StartupType Manual
-Set-Service -Name "DevicesFlowUserSvc_*" -StartupType Manual
-Set-Service -Name "Dhcp" -StartupType Automatic
-Set-Service -Name "DiagTrack" -StartupType Automatic
-Set-Service -Name "DialogBlockingService" -StartupType Disabled
-Set-Service -Name "DispBrokerDesktopSvc" -StartupType Automatic
-Set-Service -Name "DisplayEnhancementService" -StartupType Manual
-Set-Service -Name "DmEnrollmentSvc" -StartupType Manual
-Set-Service -Name "Dnscache" -StartupType Automatic
-Set-Service -Name "EFS" -StartupType Manual
-Set-Service -Name "EapHost" -StartupType Manual
-Set-Service -Name "EntAppSvc" -StartupType Manual
-Set-Service -Name "EventLog" -StartupType Automatic
-Set-Service -Name "EventSystem" -StartupType Automatic
-Set-Service -Name "FDResPub" -StartupType Manual
-Set-Service -Name "Fax" -StartupType Manual
-Set-Service -Name "FontCache" -StartupType Automatic
-Set-Service -Name "FrameServer" -StartupType Manual
-Set-Service -Name "FrameServerMonitor" -StartupType Manual
-Set-Service -Name "GraphicsPerfSvc" -StartupType Manual
-Set-Service -Name "HomeGroupListener" -StartupType Manual
-Set-Service -Name "HomeGroupProvider" -StartupType Manual
-Set-Service -Name "HvHost" -StartupType Manual
-Set-Service -Name "IEEtwCollectorService" -StartupType Manual
-Set-Service -Name "IKEEXT" -StartupType Manual
-Set-Service -Name "InstallService" -StartupType Manual
-Set-Service -Name "InventorySvc" -StartupType Manual
-Set-Service -Name "IpxlatCfgSvc" -StartupType Manual
-Set-Service -Name "KeyIso" -StartupType Automatic
-Set-Service -Name "KtmRm" -StartupType Manual
-Set-Service -Name "LSM" -StartupType Automatic
-Set-Service -Name "LanmanServer" -StartupType Automatic
-Set-Service -Name "LanmanWorkstation" -StartupType Automatic
-Set-Service -Name "LicenseManager" -StartupType Manual
-Set-Service -Name "LxpSvc" -StartupType Manual
-Set-Service -Name "MSDTC" -StartupType Manual
-Set-Service -Name "MSiSCSI" -StartupType Manual
-Set-Service -Name "MapsBroker" -StartupType Automatic
-Set-Service -Name "McpManagementService" -StartupType Manual
-Set-Service -Name "MessagingService_*" -StartupType Manual
-Set-Service -Name "MicrosoftEdgeElevationService" -StartupType Manual
-Set-Service -Name "MixedRealityOpenXRSvc" -StartupType Manual
-Set-Service -Name "MpsSvc" -StartupType Automatic
-Set-Service -Name "MsKeyboardFilter" -StartupType Disabled
-Set-Service -Name "NPSMSvc_*" -StartupType Manual
-Set-Service -Name "NaturalAuthentication" -StartupType Manual
-Set-Service -Name "NcaSvc" -StartupType Manual
-Set-Service -Name "NcbService" -StartupType Manual
-Set-Service -Name "NcdAutoSetup" -StartupType Manual
-Set-Service -Name "NetSetupSvc" -StartupType Manual
-Set-Service -Name "NetTcpPortSharing" -StartupType Disabled
-Set-Service -Name "Netlogon" -StartupType Automatic
-Set-Service -Name "Netman" -StartupType Manual
-Set-Service -Name "NgcCtnrSvc" -StartupType Manual
-Set-Service -Name "NgcSvc" -StartupType Manual
-Set-Service -Name "NlaSvc" -StartupType Manual
-Set-Service -Name "OneSyncSvc_*" -StartupType Automatic
-Set-Service -Name "P9RdrService_*" -StartupType Manual
-Set-Service -Name "PNRPAutoReg" -StartupType Manual
-Set-Service -Name "PNRPsvc" -StartupType Manual
-Set-Service -Name "PcaSvc" -StartupType Automatic
-Set-Service -Name "PeerDistSvc" -StartupType Manual
-Set-Service -Name "PenService_*" -StartupType Manual
-Set-Service -Name "PerfHost" -StartupType Manual
-Set-Service -Name "PhoneSvc" -StartupType Manual
-Set-Service -Name "PimIndexMaintenanceSvc_*" -StartupType Manual
-Set-Service -Name "PlugPlay" -StartupType Manual
-Set-Service -Name "PolicyAgent" -StartupType Manual
-Set-Service -Name "Power" -StartupType Automatic
-Set-Service -Name "PrintNotify" -StartupType Manual
-Set-Service -Name "PrintWorkflowUserSvc_*" -StartupType Manual
-Set-Service -Name "ProfSvc" -StartupType Automatic
-Set-Service -Name "PushToInstall" -StartupType Manual
-Set-Service -Name "QWAVE" -StartupType Manual
-Set-Service -Name "RasAuto" -StartupType Manual
-Set-Service -Name "RasMan" -StartupType Manual
-Set-Service -Name "RemoteAccess" -StartupType Disabled
-Set-Service -Name "RemoteRegistry" -StartupType Disabled
-Set-Service -Name "RetailDemo" -StartupType Manual
-Set-Service -Name "RmSvc" -StartupType Manual
-Set-Service -Name "RpcEptMapper" -StartupType Automatic
-Set-Service -Name "RpcLocator" -StartupType Manual
-Set-Service -Name "RpcSs" -StartupType Automatic
-Set-Service -Name "SCPolicySvc" -StartupType Manual
-Set-Service -Name "SCardSvr" -StartupType Manual
-Set-Service -Name "SDRSVC" -StartupType Manual
-Set-Service -Name "SEMgrSvc" -StartupType Manual
-Set-Service -Name "SENS" -StartupType Automatic
-Set-Service -Name "SNMPTRAP" -StartupType Manual
-Set-Service -Name "SNMPTrap" -StartupType Manual
-Set-Service -Name "SSDPSRV" -StartupType Manual
-Set-Service -Name "SamSs" -StartupType Automatic
-Set-Service -Name "ScDeviceEnum" -StartupType Manual
-Set-Service -Name "Schedule" -StartupType Automatic
-Set-Service -Name "SecurityHealthService" -StartupType Manual
-Set-Service -Name "Sense" -StartupType Manual
-Set-Service -Name "SensorDataService" -StartupType Manual
-Set-Service -Name "SensorService" -StartupType Manual
-Set-Service -Name "SensrSvc" -StartupType Manual
-Set-Service -Name "SessionEnv" -StartupType Manual
-Set-Service -Name "SharedAccess" -StartupType Manual
-Set-Service -Name "SharedRealitySvc" -StartupType Manual
-Set-Service -Name "ShellHWDetection" -StartupType Automatic
-Set-Service -Name "SmsRouter" -StartupType Manual
-Set-Service -Name "Spooler" -StartupType Automatic
-Set-Service -Name "SstpSvc" -StartupType Manual
-Set-Service -Name "StiSvc" -StartupType Manual
-Set-Service -Name "StorSvc" -StartupType Automatic
-Set-Service -Name "SysMain" -StartupType Automatic
-Set-Service -Name "SystemEventsBroker" -StartupType Automatic
-Set-Service -Name "TabletInputService" -StartupType Manual
-Set-Service -Name "TapiSrv" -StartupType Manual
-Set-Service -Name "TermService" -StartupType Automatic
-Set-Service -Name "Themes" -StartupType Automatic
-Set-Service -Name "TieringEngineService" -StartupType Manual
-Set-Service -Name "TimeBroker" -StartupType Manual
-Set-Service -Name "TimeBrokerSvc" -StartupType Manual
-Set-Service -Name "TokenBroker" -StartupType Manual
-Set-Service -Name "TrkWks" -StartupType Automatic
-Set-Service -Name "TroubleshootingSvc" -StartupType Manual
-Set-Service -Name "TrustedInstaller" -StartupType Manual
-Set-Service -Name "UI0Detect" -StartupType Manual
-Set-Service -Name "UdkUserSvc_*" -StartupType Manual
-Set-Service -Name "UevAgentService" -StartupType Disabled
-Set-Service -Name "UmRdpService" -StartupType Manual
-Set-Service -Name "UnistoreSvc_*" -StartupType Manual
-Set-Service -Name "UserDataSvc_*" -StartupType Manual
-Set-Service -Name "UserManager" -StartupType Automatic
-Set-Service -Name "UsoSvc" -StartupType Automatic
-Set-Service -Name "VGAuthService" -StartupType Automatic
-Set-Service -Name "VMTools" -StartupType Automatic
-Set-Service -Name "VSS" -StartupType Manual
-Set-Service -Name "VacSvc" -StartupType Manual
-Set-Service -Name "VaultSvc" -StartupType Automatic
-Set-Service -Name "W32Time" -StartupType Manual
-Set-Service -Name "WEPHOSTSVC" -StartupType Manual
-Set-Service -Name "WFDSConMgrSvc" -StartupType Manual
-Set-Service -Name "WMPNetworkSvc" -StartupType Manual
-Set-Service -Name "WManSvc" -StartupType Manual
-Set-Service -Name "WPDBusEnum" -StartupType Manual
-Set-Service -Name "WSService" -StartupType Manual
-Set-Service -Name "WSearch" -StartupType Automatic
-Set-Service -Name "WaaSMedicSvc" -StartupType Manual
-Set-Service -Name "WalletService" -StartupType Manual
-Set-Service -Name "WarpJITSvc" -StartupType Manual
-Set-Service -Name "WbioSrvc" -StartupType Manual
-Set-Service -Name "Wcmsvc" -StartupType Automatic
-Set-Service -Name "WcsPlugInService" -StartupType Manual
-Set-Service -Name "WdNisSvc" -StartupType Manual
-Set-Service -Name "WdiServiceHost" -StartupType Manual
-Set-Service -Name "WdiSystemHost" -StartupType Manual
-Set-Service -Name "WebClient" -StartupType Manual
-Set-Service -Name "Wecsvc" -StartupType Manual
-Set-Service -Name "WerSvc" -StartupType Manual
-Set-Service -Name "WiaRpc" -StartupType Manual
-Set-Service -Name "WinDefend" -StartupType Automatic
-Set-Service -Name "WinHttpAutoProxySvc" -StartupType Manual
-Set-Service -Name "WinRM" -StartupType Manual
-Set-Service -Name "Winmgmt" -StartupType Automatic
-Set-Service -Name "WlanSvc" -StartupType Automatic
-Set-Service -Name "WpcMonSvc" -StartupType Manual
-Set-Service -Name "WpnService" -StartupType Automatic
-Set-Service -Name "WpnUserService_*" -StartupType Automatic
-Set-Service -Name "XblAuthManager" -StartupType Manual
-Set-Service -Name "XblGameSave" -StartupType Manual
-Set-Service -Name "XboxGipSvc" -StartupType Manual
-Set-Service -Name "XboxNetApiSvc" -StartupType Manual
-Set-Service -Name "autotimesvc" -StartupType Manual
-Set-Service -Name "bthserv" -StartupType Manual
-Set-Service -Name "camsvc" -StartupType Manual
-Set-Service -Name "cbdhsvc_*" -StartupType Automatic
-Set-Service -Name "cloudidsvc" -StartupType Manual
-Set-Service -Name "dcsvc" -StartupType Manual
-Set-Service -Name "defragsvc" -StartupType Manual
-Set-Service -Name "diagnosticshub.standardcollector.service" -StartupType Manual
-Set-Service -Name "diagsvc" -StartupType Manual
-Set-Service -Name "dmwappushservice" -StartupType Manual
-Set-Service -Name "dot3svc" -StartupType Manual
-Set-Service -Name "edgeupdate" -StartupType Automatic
-Set-Service -Name "edgeupdatem" -StartupType Manual
-Set-Service -Name "embeddedmode" -StartupType Manual
-Set-Service -Name "fdPHost" -StartupType Manual
-Set-Service -Name "fhsvc" -StartupType Manual
-Set-Service -Name "gpsvc" -StartupType Automatic
-Set-Service -Name "hidserv" -StartupType Manual
-Set-Service -Name "icssvc" -StartupType Manual
-Set-Service -Name "iphlpsvc" -StartupType Automatic
-Set-Service -Name "lfsvc" -StartupType Manual
-Set-Service -Name "lltdsvc" -StartupType Manual
-Set-Service -Name "lmhosts" -StartupType Manual
-Set-Service -Name "mpssvc" -StartupType Automatic
-Set-Service -Name "msiserver" -StartupType Manual
-Set-Service -Name "netprofm" -StartupType Manual
-Set-Service -Name "nsi" -StartupType Automatic
-Set-Service -Name "p2pimsvc" -StartupType Manual
-Set-Service -Name "p2psvc" -StartupType Manual
-Set-Service -Name "perceptionsimulation" -StartupType Manual
-Set-Service -Name "pla" -StartupType Manual
-Set-Service -Name "seclogon" -StartupType Manual
-Set-Service -Name "shpamsvc" -StartupType Disabled
-Set-Service -Name "smphost" -StartupType Manual
-Set-Service -Name "spectrum" -StartupType Manual
-Set-Service -Name "sppsvc" -StartupType Automatic
-Set-Service -Name "ssh-agent" -StartupType Disabled
-Set-Service -Name "svsvc" -StartupType Manual
-Set-Service -Name "swprv" -StartupType Manual
-Set-Service -Name "tiledatamodelsvc" -StartupType Automatic
-Set-Service -Name "tzautoupdate" -StartupType Disabled
-Set-Service -Name "uhssvc" -StartupType Disabled
-Set-Service -Name "upnphost" -StartupType Manual
-Set-Service -Name "vds" -StartupType Manual
-Set-Service -Name "vm3dservice" -StartupType Automatic
-Set-Service -Name "vmicguestinterface" -StartupType Manual
-Set-Service -Name "vmicheartbeat" -StartupType Manual
-Set-Service -Name "vmickvpexchange" -StartupType Manual
-Set-Service -Name "vmicrdv" -StartupType Manual
-Set-Service -Name "vmicshutdown" -StartupType Manual
-Set-Service -Name "vmictimesync" -StartupType Manual
-Set-Service -Name "vmicvmsession" -StartupType Manual
-Set-Service -Name "vmicvss" -StartupType Manual
-Set-Service -Name "vmvss" -StartupType Manual
-Set-Service -Name "wbengine" -StartupType Manual
-Set-Service -Name "wcncsvc" -StartupType Manual
-Set-Service -Name "webthreatdefsvc" -StartupType Manual
-Set-Service -Name "webthreatdefusersvc_*" -StartupType Automatic
-Set-Service -Name "wercplsupport" -StartupType Manual
-Set-Service -Name "wisvc" -StartupType Manual
-Set-Service -Name "wlidsvc" -StartupType Manual
-Set-Service -Name "wlpasvc" -StartupType Manual
-Set-Service -Name "wmiApSrv" -StartupType Manual
-Set-Service -Name "workfolderssvc" -StartupType Manual
-Set-Service -Name "wscsvc" -StartupType Automatic
-Set-Service -Name "wuauserv" -StartupType Manual
-Set-Service -Name "wudfsvc" -StartupType Manual
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AJRouter" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ALG" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppIDSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppMgmt" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppReadiness" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppVClient" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AppXSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Appinfo" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AssignedAccessManagerSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AudioEndpointBuilder" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AudioSrv" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Audiosrv" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\AxInstSV" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BDESVC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BFE" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BITS" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BTAGService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BcastDVRUserService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BluetoothUserService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BrokerInfrastructure" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Browser" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BthAvctpSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\BthHFSrv" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CDPSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CDPUserSvc_*" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\COMSysApp" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CaptureService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CertPropSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ClipSVC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ConsentUxUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CoreMessagingRegistrar" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CredentialEnrollmentManagerUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CryptSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\CscService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DPS" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DcomLaunch" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DcpSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DevQueryBroker" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DeviceAssociationBrokerSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DeviceAssociationService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DeviceInstall" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DevicePickerUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DevicesFlowUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dhcp" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DiagTrack" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DialogBlockingService" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DispBrokerDesktopSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DisplayEnhancementService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\DmEnrollmentSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EFS" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EapHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EntAppSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EventLog" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\EventSystem" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\FDResPub" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Fax" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\FontCache" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\FrameServer" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\FrameServerMonitor" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\HomeGroupListener" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\HomeGroupProvider" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\HvHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\IEEtwCollectorService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\IKEEXT" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\InstallService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\InventorySvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\IpxlatCfgSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\KeyIso" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\KtmRm" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LSM" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanServer" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LanmanWorkstation" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LicenseManager" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\LxpSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MSDTC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MSiSCSI" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MapsBroker" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\McpManagementService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MessagingService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MicrosoftEdgeElevationService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MixedRealityOpenXRSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MpsSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\MsKeyboardFilter" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NPSMSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NaturalAuthentication" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NcaSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NcbService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NcdAutoSetup" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NetSetupSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NetTcpPortSharing" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netlogon" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Netman" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NgcCtnrSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NgcSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\NlaSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\OneSyncSvc_*" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\P9RdrService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PNRPAutoReg" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PNRPsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PcaSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PeerDistSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PenService_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PerfHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PhoneSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PimIndexMaintenanceSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PlugPlay" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PolicyAgent" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Power" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PrintNotify" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PrintWorkflowUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ProfSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\PushToInstall" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\QWAVE" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RasAuto" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RasMan" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RemoteAccess" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RemoteRegistry" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RetailDemo" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RmSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RpcEptMapper" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RpcLocator" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\RpcSs" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SCPolicySvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SCardSvr" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SDRSVC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SEMgrSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SENS" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SNMPTRAP" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SNMPTrap" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SSDPSRV" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SamSs" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ScDeviceEnum" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Schedule" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SecurityHealthService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Sense" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SensorDataService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SensorService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SensrSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SessionEnv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SharedAccess" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SharedRealitySvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ShellHWDetection" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SmsRouter" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Spooler" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SstpSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\StiSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\StorSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SysMain" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\SystemEventsBroker" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TabletInputService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TapiSrv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TermService" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Themes" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TieringEngineService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TimeBroker" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TimeBrokerSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TokenBroker" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TrkWks" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TroubleshootingSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\TrustedInstaller" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UI0Detect" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UdkUserSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UevAgentService" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UmRdpService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UnistoreSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UserDataSvc_*" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UserManager" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\UsoSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VGAuthService" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VMTools" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VSS" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VacSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\VaultSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\W32Time" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WEPHOSTSVC" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WFDSConMgrSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WMPNetworkSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WManSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WPDBusEnum" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WSService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WSearch" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WalletService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WarpJITSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WbioSrvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Wcmsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WcsPlugInService" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WdNisSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WdiServiceHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WdiSystemHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WebClient" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Wecsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WerSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WiaRpc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WinDefend" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WinRM" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Winmgmt" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WlanSvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WpcMonSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WpnService" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WpnUserService_*" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\XblAuthManager" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\XblGameSave" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\XboxGipSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\XboxNetApiSvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\autotimesvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\bthserv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\camsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\cbdhsvc_*" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\cloudidsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\dcsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\defragsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\diagnosticshub.standardcollector.service" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\diagsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\dmwappushservice" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\dot3svc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\edgeupdate" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\edgeupdatem" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\embeddedmode" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\fdPHost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\fhsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\gpsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\hidserv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\icssvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\iphlpsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\lfsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\lltdsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\lmhosts" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\mpssvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\msiserver" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\netprofm" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\nsi" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\p2pimsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\p2psvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\perceptionsimulation" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\pla" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\seclogon" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\shpamsvc" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\smphost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\spectrum" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\sppsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\ssh-agent" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\svsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\swprv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\tiledatamodelsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\tzautoupdate" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\uhssvc" -Name "Start" -Value 4
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\upnphost" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vds" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vm3dservice" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicguestinterface" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicheartbeat" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmickvpexchange" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicrdv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicshutdown" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmictimesync" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicvmsession" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmicvss" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\vmvss" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wbengine" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wcncsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\webthreatdefsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\webthreatdefusersvc_*" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wercplsupport" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wisvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wlidsvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wlpasvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wmiApSrv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\workfolderssvc" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wscsvc" -Name "Start" -Value 2
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wuauserv" -Name "Start" -Value 3
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\wudfsvc" -Name "Start" -Value 3
+
+Write-Host "Services Set to Default. Restart Computer for this to go into effect" -Foregroundcolor Yellow
+pause
 
         }
 	
