@@ -63,6 +63,26 @@ Pause
 
 }
 
+
+function Option5 {
+Clear-Host
+# Registry Changes
+
+}
+
+function Option6 {
+Clear-Host
+# Nvidia
+
+}
+
+function Option7 {
+Clear-Host
+# Default Services / Bare Gaming Services
+
+}
+
+
 # Display the Menu and Handle User Input
 while ($true) {
 Clear-Host
@@ -75,6 +95,10 @@ Write-Host "Window Tool" -ForegroundColor Cyan
     Write-Host "2. Clear Disk Space"
     Write-Host "3. Reset Network"
     Write-Host "4. Download AntiVirus Programs"
+    Write-Host "PC Optimization" -ForegroundColor Yellow
+    Write-Host "5. Registry Changes"
+    Write-Host "6. Nvidia"
+    Write-Host "7. Default Services / Bare Gaming Services"
     Write-Host "==========================================="
     $choice = Read-Host "Enter your choice"
 
@@ -83,6 +107,9 @@ Write-Host "Window Tool" -ForegroundColor Cyan
         "2" { Option2 }
         "3" { Option3 }
 	"4" { Option4 }
+        "5" { Option5 }
+	"6" { Option6 }
+        "7" { Option7 }
         default { Write-Host "Invalid choice. Please try again." }
     }
 }
