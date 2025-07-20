@@ -4,6 +4,7 @@ function Option1 {
     Clear-Host
     # SFC Scannow
     SFC /scannow
+Read-Host -Prompt "Press Enter to exit"
     
 }
 
