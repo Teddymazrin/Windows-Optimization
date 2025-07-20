@@ -39,7 +39,7 @@ $downloadPath1 = "$env:TEMP\adwcleaner.exe"
 $downloadPath2 = "$env:TEMP\MBSetup.exe"
 $destinationFolder = "C:\Users\$env:USERNAME\Desktop\PC\AntiVirus"
 $destinationPath1 = "$destinationFolder\adwcleaner.exe"
-$destinationPath2 = "$destinationFolder\Malwarebytes.exe"
+$destinationPath2 = "$destinationFolder\MBSetup.exe"
 
 # Download the file
 Invoke-WebRequest -Uri $download1 -OutFile $downloadPath1
@@ -57,7 +57,7 @@ Start-Process -FilePath $destinationPath1 -ArgumentList "/eula /clean" -Wait
 # Silently install Malwarebytes
 Start-Process -FilePath $destinationPath2 -ArgumentList "/SP- /VERYSILENT /NORESTART" -Wait
 
-Write-Host "Anti-Virus Programs installed. Desktop>PC>AntiVirus Folder" -ForegroundColor Yellow
+Write-Host "Anti-Virus Programs installed. Go to Desktop>PC>AntiVirus Folder" -ForegroundColor Yellow
 
 Pause
 
