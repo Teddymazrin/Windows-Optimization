@@ -63,14 +63,14 @@ Start-Process -FilePath $destinationPath2 -ArgumentList "/SP- /VERYSILENT /NORES
 while ($true) {
 Clear-Host
 
-Write-Host "Windows Tool Example" -ForegroundColor Cyan
+Write-Host "Test" -ForegroundColor Cyan
 
     Write-Host "==========================================="
     Write-Host "PC Maintenance" -ForegroundColor Yellow
-	Write-Host "1. Troubleshoot PC"
+    Write-Host "1. Troubleshoot PC"
     Write-Host "2. Clear Disk Space"
     Write-Host "3. Reset Network"
-	Write-Host "4. Download AntiVirus Programs"
+    Write-Host "4. Download AntiVirus Programs"
     Write-Host "==========================================="
     $choice = Read-Host "Enter your choice"
 
