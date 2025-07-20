@@ -54,11 +54,8 @@ Move-Item -Path $downloadPath1 -Destination $destinationPath1 -Force
 # Move the file2 to the Desktop folder
 Move-Item -Path $downloadPath2 -Destination $destinationPath2 -Force
 
-# Optionally run it
+#  Install AdwareCleaner
 Start-Process -FilePath $destinationPath1 -ArgumentList "/eula /clean" -Wait
-
-# Silently install Malwarebytes
-Start-Process -FilePath $destinationPath2 -ArgumentList "/SP- /VERYSILENT /NORESTART" -Wait
 
 Write-Host "Anti-Virus Programs installed. Go to Desktop>PC>AntiVirus Folder" -ForegroundColor Yellow
 
