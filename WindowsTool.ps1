@@ -145,7 +145,7 @@ Clear-Host
 while ($true) {
 Clear-Host
 
-Write-Host "Window Tool" -ForegroundColor Cyan
+Write-Host "Windows Tool" -ForegroundColor Cyan
 
     Write-Host "==========================================="
     Write-Host "PC Maintenance" -ForegroundColor Yellow
