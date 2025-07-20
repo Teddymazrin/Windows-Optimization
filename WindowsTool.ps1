@@ -93,11 +93,14 @@ Clear-Host
 function Option6 {
 Clear-Host
 # Nvidia
+   Write-Host "==========================================="
     Write-Host "Nvidia Utilities" -ForegroundColor Yellow
     Write-Host "1. Update Nvidia Drivers"
     Write-Host "2. Uninstall Graphics Driver"
     Write-Host "3. Return to Main Menu"
+    Write-Host "==========================================="
     $subChoice = Read-Host "Enter your Nvidia option"
+    
 
     switch ($subChoice) {
         "1" {
