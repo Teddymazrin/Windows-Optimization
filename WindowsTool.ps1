@@ -32,7 +32,7 @@ function Option3 {
 }
 
 function Option4 {
-	Clear-host
+Clear-host
 $download1 = "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release"
 $download2 = "https://github.com/Teddymazrin/Windows-Optimization/raw/refs/heads/main/Programs/MBSetup.exe"
 $downloadPath1 = "$env:TEMP\adwcleaner.exe"
@@ -41,25 +41,45 @@ $destinationFolder = "C:\Users\$env:USERNAME\Desktop\PC\AntiVirus"
 $destinationPath1 = "$destinationFolder\adwcleaner.exe"
 $destinationPath2 = "$destinationFolder\MBSetup.exe"
 
-# Download the file
-Invoke-WebRequest -Uri $download1 -OutFile $downloadPath1
-Invoke-WebRequest -Uri $download2 -OutFile $downloadPath2
+# Check if both files already exist in destination
+if ((Test-Path $destinationPath1) -and (Test-Path $destinationPath2)) {
+    Write-Host "Both files already exist in the destination folder. Skipping download and install." -ForegroundColor Cyan
+} else {
+    # Create the AntiVirus folder if it doesn't exist
+    if (-Not (Test-Path $destinationFolder)) {
+        New-Item -Path $destinationFolder -ItemType Directory -Force
+    }
 
-# Create the AntiVirus folder on the Desktop
-New-Item -Path $destinationFolder -ItemType Directory -Force
+    # Download adwcleaner if not in destination
+    if (-Not (Test-Path $destinationPath1)) {
+        Invoke-WebRequest -Uri $download1 -OutFile $downloadPath1
+        Move-Item -Path $downloadPath1 -Destination $destinationPath1 -Force
+        Write-Host "Downloaded and moved adwcleaner.exe" -ForegroundColor Green
+    }
 
-# Move the file1 to the Desktop folder
-Move-Item -Path $downloadPath1 -Destination $destinationPath1 -Force
+    # Download MBSetup if not in destination
+    if (-Not (Test-Path $destinationPath2)) {
+        Invoke-WebRequest -Uri $download2 -OutFile $downloadPath2
+        Move-Item -Path $downloadPath2 -Destination $destinationPath2 -Force
+        Write-Host "Downloaded and moved MBSetup.exe" -ForegroundColor Green
+    }
 
-# Move the file2 to the Desktop folder
-Move-Item -Path $downloadPath2 -Destination $destinationPath2 -Force
+    # Install AdwCleaner
+    if (Test-Path $destinationPath1) {
+        Write-Host "Installing AdwCleaner..." -ForegroundColor Yellow
+        Start-Process -FilePath $destinationPath1 -ArgumentList "/eula /clean" -Wait
+    }
 
-#  Install AdwareCleaner
-Start-Process -FilePath $destinationPath1 -ArgumentList "/eula /clean" -Wait
+    # Install MBSetup
+    if (Test-Path $destinationPath2) {
+        Write-Host "Installing MBSetup..." -ForegroundColor Yellow
+        Start-Process -FilePath $destinationPath2 -Wait
+    }
+}
 
-Write-Host "Anti-Virus Programs installed. Go to Desktop>PC>AntiVirus Folder" -ForegroundColor Yellow
-
+Write-Host "Script completed. Check Desktop > PC > AntiVirus folder." -ForegroundColor Magenta
 Pause
+
 
 }
 
