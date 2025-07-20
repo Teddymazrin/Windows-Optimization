@@ -71,7 +71,7 @@ Write-Host "Windows Tool" -ForegroundColor Cyan
         "1" { Option1 }
         "2" { Option2 }
         "3" { Option3 }
-		"4" { Option4 }
+	"4" { Option4 }
         default { Write-Host "Invalid choice. Please try again." }
     }
 }
