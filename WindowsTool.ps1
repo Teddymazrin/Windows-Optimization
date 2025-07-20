@@ -48,8 +48,11 @@ Invoke-WebRequest -Uri $download2 -OutFile $downloadPath2
 # Create the AntiVirus folder on the Desktop
 New-Item -Path $destinationFolder -ItemType Directory -Force
 
-# Move the file to the Desktop folder
+# Move the file1 to the Desktop folder
 Move-Item -Path $downloadPath1 -Destination $destinationPath1 -Force
+
+# Move the file2 to the Desktop folder
+Move-Item -Path $downloadPath2 -Destination $destinationPath2 -Force
 
 # Optionally run it
 Start-Process -FilePath $destinationPath1 -ArgumentList "/eula /clean" -Wait
