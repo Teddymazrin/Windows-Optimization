@@ -57,7 +57,7 @@ Start-Process -FilePath $destinationPath1 -ArgumentList "/eula /clean" -Wait
 # Silently install Malwarebytes
 Start-Process -FilePath $destinationPath2 -ArgumentList "/SP- /VERYSILENT /NORESTART" -Wait
 
-Write-Host "Anti-Virus Programs installed. Desktop>PC>AntiVirus Folder"
+Write-Host "Anti-Virus Programs installed. Desktop>PC>AntiVirus Folder" -ForegroundColor Yellow
 
 Pause
 
