@@ -105,7 +105,7 @@ Clear-Host
             Start-Process "https://www.nvidia.com/en-us/drivers/"
         }
         "2" {
-            Write-Host "Uninstalling Driver" -ForegroundColor Cyan
+            Write-Host "Running Driver Uninstaller" -ForegroundColor Cyan
             # Downloading Cleanup Tool
             Invoke-WebRequest -Uri "https://github.com/Teddymazrin/Windows-Optimization/raw/refs/heads/main/Programs/CleanupTool.exe" -OutFile "$env:TEMP/CleanupTool.exe"
 	    # Starting Cleanup Tool
