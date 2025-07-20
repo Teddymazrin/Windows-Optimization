@@ -87,6 +87,81 @@ Pause
 function Option5 {
 Clear-Host
 # Registry Changes
+# --- Restorepoint Section ---
+Clear-Host
+Write-Host "==============================================================================="
+Write-Host "  Press 1 -  Create a Restore Point"
+Write-Host "  Press 2 -  Continue Without Restore Point"
+Write-Host "==============================================================================="
+
+$choice = Read-Host "Enter Your Option"
+
+if ($choice -eq "1") {
+    Write-Host "Creating Restore Point..." -ForegroundColor Cyan
+    Start-Service -Name 'vss'
+    Enable-ComputerRestore -Drive "C:"
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore" `
+        -Name "SystemRestorePointCreationFrequency" -Value 0
+    Checkpoint-Computer -Description "BeforeTweaking"
+}
+
+Write-Host "Applying system tweaks..." -ForegroundColor Yellow
+
+# Disable power throttling
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling" -Name "PowerThrottlingOff" -Value 1
+
+# Games scheduling tweaks
+$gamesPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games"
+New-Item -Path $gamesPath -Force
+Set-ItemProperty -Path $gamesPath -Name "Affinity" -Value 0
+Set-ItemProperty -Path $gamesPath -Name "Background Only" -Value "False"
+Set-ItemProperty -Path $gamesPath -Name "Clock Rate" -Value 10000
+Set-ItemProperty -Path $gamesPath -Name "GPU Priority" -Value 8
+Set-ItemProperty -Path $gamesPath -Name "Priority" -Value 6
+Set-ItemProperty -Path $gamesPath -Name "Scheduling Category" -Value "High"
+Set-ItemProperty -Path $gamesPath -Name "SFIO Priority" -Value "Normal"
+
+# Sleep and startup
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FlyoutMenuSettings" -Name "ShowSleepOption" -Value 0
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Power" -Name "HiberbootEnabled" -Value 1
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Power" -Name "HibernateEnabled" -Value 0
+
+# Maintenance
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance" -Name "MaintenanceDisabled" -Value 1
+
+# UI tweaks
+Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "MenuShowDelay" -Value "0"
+New-Item -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" -Force
+New-ItemProperty -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" `
+    -Name "(default)" -PropertyType String -Value "" -Force
+
+# Windows 11 features
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications" -Name "GlobalUserDisabled" -Value 1
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Dsh" -Name "AllowNewsAndInterests" -Value 0
+
+# Cortana
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search" -Name "AllowCortana" -Value 0
+
+# Priority control
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\PriorityControl" -Name "Win32PrioritySeparation" -Value 2
+
+# Pointer precision
+Set-ItemProperty -Path "HKCU:\Control Panel\Mouse" -Name "MouseSpeed" -Value "0"
+Set-ItemProperty -Path "HKCU:\Control Panel\Mouse" -Name "MouseThreshold1" -Value "0"
+Set-ItemProperty -Path "HKCU:\Control Panel\Mouse" -Name "MouseThreshold2" -Value "0"
+
+# UAC
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "EnableLUA" -Value 0
+
+# Hibernate and PowerPlan
+powercfg -h off
+powercfg -restoredefaultschemes
+powercfg -setactive "8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c"
+powercfg -delete 381b4222-f694-41f0-9685-ff5bb260df2e
+powercfg -delete a1841308-3541-4fab-bc81-f71556f20b4a
+
+Write-Host "`nTweaking complete!" -ForegroundColor Green
+pause
 
 }
 
