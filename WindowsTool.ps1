@@ -16,10 +16,14 @@ $tempFolder = $env:TEMP
 # Remove all files and folders inside it
 Get-ChildItem -Path $tempFolder -Recurse -Force | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 
+Write-Host "Temp Folder has been cleared" -Foregroundcolor green
+
 # Run Diskcleanup (No GUI Interaction)
 Start-Process "cleanmgr.exe" -ArgumentList "/verylowdisk" -Wait
 
 }
+
+Write-Host "Cleaning Disk Space" 
 
 function Option3 {
     Clear-Host
@@ -101,8 +105,7 @@ if ($choice -eq "1") {
     Write-Host "Creating Restore Point..." -ForegroundColor Cyan
     Start-Service -Name 'vss'
     Enable-ComputerRestore -Drive "C:"
-    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore" `
-        -Name "SystemRestorePointCreationFrequency" -Value 0
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore" -Name "SystemRestorePointCreationFrequency" -Value 0
     Checkpoint-Computer -Description "BeforeTweaking"
 }
 
