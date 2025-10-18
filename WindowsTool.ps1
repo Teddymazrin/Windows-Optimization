@@ -232,7 +232,7 @@ Clear-Host
     Write-Host "2. Set Services to Default"
     Write-Host "3. Return to Main Menu"
     Write-Host "==========================================="
-    $subChoice = Read-Host "Enter your Nvidia option"
+    $subChoice = Read-Host "Enter your option"
     
 
     switch ($subChoice) {
@@ -806,12 +806,17 @@ pause
             return
         }
         default {
-            Write-Host "Invalid Nvidia option. Returning to Main Menu." -ForegroundColor Red
+            Write-Host "Invalid option. Returning to Main Menu." -ForegroundColor Red
         }
     }
 
 }
 
+function Option8 {
+Start-Process "https://www.google.com"
+pause
+
+}
 
 # Display the Menu and Handle User Input
 while ($true) {
@@ -829,6 +834,7 @@ Write-Host "Windows Tool" -ForegroundColor Cyan
     Write-Host "5. Apply Optimizations"
     Write-Host "6. Nvidia"
     Write-Host "7. Set Services to Default / Manual for Performance"
+	Write-Host "8. Activate Windows"
     Write-Host "==========================================="
     $choice = Read-Host "Enter your choice"
 
@@ -836,10 +842,12 @@ Write-Host "Windows Tool" -ForegroundColor Cyan
         "1" { Option1 }
         "2" { Option2 }
         "3" { Option3 }
-	"4" { Option4 }
+	    "4" { Option4 }
         "5" { Option5 }
-	"6" { Option6 }
+	    "6" { Option6 }
         "7" { Option7 }
+		"8" { Option8 }
         default { Write-Host "Invalid choice. Please try again." }
     }
 }
+
