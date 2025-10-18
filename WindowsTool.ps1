@@ -834,7 +834,7 @@ Write-Host "Windows Tool" -ForegroundColor Cyan
     Write-Host "5. Apply Optimizations"
     Write-Host "6. Nvidia"
     Write-Host "7. Set Services to Default / Manual for Performance"
-	Write-Host "8. Activate Windows"
+	Write-Host "8. Empty"
     Write-Host "==========================================="
     $choice = Read-Host "Enter your choice"
 
@@ -850,4 +850,5 @@ Write-Host "Windows Tool" -ForegroundColor Cyan
         default { Write-Host "Invalid choice. Please try again." }
     }
 }
+
 
