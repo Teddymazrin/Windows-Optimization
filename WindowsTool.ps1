@@ -812,12 +812,6 @@ pause
 
 }
 
-function Option8 {
-Start-Process "https://www.google.com"
-pause
-
-}
-
 # Display the Menu and Handle User Input
 while ($true) {
 Clear-Host
@@ -834,7 +828,6 @@ Write-Host "Windows Tool" -ForegroundColor Cyan
     Write-Host "5. Apply Optimizations"
     Write-Host "6. Nvidia"
     Write-Host "7. Set Services to Default / Manual for Performance"
-	Write-Host "8. Empty"
     Write-Host "==========================================="
     $choice = Read-Host "Enter your choice"
 
@@ -846,9 +839,9 @@ Write-Host "Windows Tool" -ForegroundColor Cyan
         "5" { Option5 }
 	    "6" { Option6 }
         "7" { Option7 }
-		"8" { Option8 }
         default { Write-Host "Invalid choice. Please try again." }
     }
 }
+
 
 
